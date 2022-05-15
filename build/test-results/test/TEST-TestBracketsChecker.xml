@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestBracketsChecker" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-05-15T18:17:28" hostname="MacBook-Air-Lisa.local" time="0.025">
+  <properties/>
+  <testcase name="[1] (){12}(po1)(&lt;12&gt;), Success" classname="TestBracketsChecker" time="0.016"/>
+  <testcase name="[2] {12}([w])1, Success" classname="TestBracketsChecker" time="0.0"/>
+  <testcase name="[3] ({12}(po1)&lt;12&gt;), Success" classname="TestBracketsChecker" time="0.001"/>
+  <testcase name="[4] 123-{1}, Success" classname="TestBracketsChecker" time="0.001"/>
+  <testcase name="[5] {[}, 3" classname="TestBracketsChecker" time="0.0"/>
+  <testcase name="[6] ([]))[, 5" classname="TestBracketsChecker" time="0.001"/>
+  <testcase name="[7] foo(bar[i), 10" classname="TestBracketsChecker" time="0.001"/>
+  <testcase name="[8] )[1]2[3](, 1" classname="TestBracketsChecker" time="0.0"/>
+  <system-out><![CDATA[Success
+Success
+Success
+Success
+3
+5
+10
+1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
